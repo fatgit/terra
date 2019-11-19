@@ -3,7 +3,7 @@ resource "null_resource" "cluster" {
 
   provisioner "local-exec" {
     # Bootstrap script called with private_ip of each node in the clutser
-    command = "echo ${var.text} > 1.txt ; cat 1.txt"
+    command = "echo ${var.text} ${var.passs}"
 
   }
 }
