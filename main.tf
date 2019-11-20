@@ -16,7 +16,7 @@ resource "null_resource" "cluster1" {
 
   }
 }
-resource "null_resource" "cluster1" {
+resource "null_resource" "cluster2" {
   # Changes to any instance of the cluster requires re-provisioning
 
   provisioner "local-exec" {
