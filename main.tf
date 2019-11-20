@@ -16,3 +16,12 @@ resource "null_resource" "cluster1" {
 
   }
 }
+resource "null_resource" "cluster1" {
+  # Changes to any instance of the cluster requires re-provisioning
+
+  provisioner "local-exec" {
+    # Bootstrap script called with private_ip of each node in the clutser
+    command = "ls -la"
+
+  }
+}
